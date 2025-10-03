@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ladaru Valentina Portofolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      body {
+        background: url("images/getty.png") no-repeat center center fixed;
+        background-size: cover;
+        overflow-x: hidden;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white font-sans relative">
+    <header class="bg-black bg-opacity-80 fixed w-full z-10 shadow-lg">
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <h1 class="text-2xl font-bold text-red-500">Ladaru Valentina Portofolio</h1>
+        <nav class="space-x-6">
+          <a href="#about" class="hover:text-red-400">About</a>
+          <a href="#games" class="hover:text-red-400">Projects</a>
+          <a href="#contact" class="hover:text-red-400">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section
+      class="h-screen flex flex-col justify-center items-center text-center bg-black bg-opacity-60"
+    >
+      <h2 class="text-5xl md:text-6xl font-extrabold text-red-500 mb-4">
+        Ladaru Valentina Portofolio
+      </h2>
+      <p class="text-lg text-gray-300 max-w-2xl mb-6">
+        Photography, Game Testing, Game Development, Web Development
+      </p>
+      <a
+        href="#games"
+        class="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-full font-semibold transition"
+        >View Projects</a
+      >
+    </section>
+
+    <section id="about" class="py-20 bg-black bg-opacity-70">
+      <div class="container mx-auto px-6 md:px-12 text-center max-w-xl">
+        <h3 class="text-3xl font-bold text-red-400 mb-6">About</h3>
+        <p class="text-gray-300 leading-relaxed">
+          Hi, I’m Valentina (Or you can call me "Ashe") – a versatile creative person exploring the
+          intersection of games, AI, visual storytelling and Photography. With over six
+          years of experience in game testing, I bring a deep understanding of
+          gameplay, mechanics, and player experience. I’m also a game developer,
+          working with Unity(Begginer) and I'm also an expert in Ren’Py, creating immersive and
+          engaging interactive experiences. Photography is another way I tell
+          stories, capturing moments with detail and emotion, while AI-driven
+          projects allow me to experiment with innovative ideas in technology.
+          I’m also learning AI language models, expanding my skill
+          set to push creative and interactive boundaries even further.I am also very good in photoshop editing.
+          Whether it’s testing games, building worlds, crafting visuals, or exploring
+          AI, I love transforming ideas into experiences that resonate. <br>
+          PS. This web-site is entirely made by me.
+        </p>
+      </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="games" class="py-20 bg-black bg-opacity-80">
+      <div class="container mx-auto px-6 md:px-12">
+        <h3 class="text-3xl font-bold text-red-400 mb-6">Projects</h3>
+        <div class="grid gap-8 md:grid-cols-3">
+          <div
+            class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition"
+          >
+            <img
+              src="images/bestgame.png"
+              alt="Game 1"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-4">
+              <h4 class="text-xl font-bold mb-2">Game Test</h4>
+              <p class="text-gray-400">
+                ꕤ Game Test Portofolio.
+              </p>
+              <a href="gametest.html" class="block hover:text-red-400">
+                <h4 class="text-x2 font-bold mb-2">Read More</h4></a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition"
+          >
+            <img
+              src="images/camer68.png"
+              alt="Game 2"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-4">
+              <h4 class="text-xl font-bold mb-2">Photography</h4>
+              <p class="text-gray-400">
+                ꕤ Photography Portofolio
+              </p>
+              <h4>Coming Soon</h4>
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition"
+          >
+            <img
+              src="images/36ff.png"
+              alt="Game 3"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-4">
+              <h4 class="text-xl font-bold mb-2">Ai Generated Art</h4>
+              <p class="text-gray-400">
+                ꕤ AI Portofolio
+              </p>
+               <a href="aiart.html" class="block hover:text-red-400">
+                <h4 class="text-x2 font-bold mb-2">Read More</h4></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-black bg-opacity-70">
+  <div class="container mx-auto px-6 md:px-12 text-center">
+    <h3 class="text-3xl font-bold text-red-400 mb-6">Contact</h3>
+    
+    <form id="contact-form" action="https://formspree.io/f/mvgbzlkd" method="POST" class="space-y-4 max-w-xl mx-auto">
+      <!-- Success message (hidden by default, placed inside form so it appears above inputs) -->
+      <div id="success-message" class="bg-green-500 text-black px-4 py-3 rounded mb-4 hidden transition-opacity duration-500">
+        Thank you! Your message has been sent.
+      </div>
+
+      <!-- Honeypot field (anti-spam) -->
+      <input type="text" name="_gotcha" style="display:none" />
+
+      <input
+        type="text"
+        name="name"
+        placeholder="Name"
+        class="w-full p-3 rounded bg-gray-900 border border-gray-700 text-white"
+        required
+      />
+      <input
+        type="email"
+        name="email"
+        placeholder="Email"
+        class="w-full p-3 rounded bg-gray-900 border border-gray-700 text-white"
+        required
+      />
+      <textarea
+        name="message"
+        placeholder="Message"
+        rows="5"
+        class="w-full p-3 rounded bg-gray-900 border border-gray-700 text-white"
+        required
+      ></textarea>
+      <button
+        type="submit"
+        class="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded font-semibold transition"
+      >
+        Send Message
+      </button>
+    </form>
+  </div>
+</section>
+
+<script>
+  const form = document.getElementById("contact-form");
+  const successMessage = document.getElementById("success-message");
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault(); // prevent default form submission
+
+    const formData = new FormData(form);
+    const action = form.action;
+
+    fetch(action, {
+      method: "POST",
+      body: formData,
+      headers: { "Accept": "application/json" }
+    })
+    .then(response => {
+      if (response.ok) {
+        // Show the success message above the inputs
+        successMessage.classList.remove("hidden");
+        successMessage.style.opacity = 1;
+        form.reset();
+
+        // Fade out after 4 seconds
+        setTimeout(() => {
+          successMessage.style.opacity = 0;
+          setTimeout(() => successMessage.classList.add("hidden"), 500); // hide after fade
+        }, 4000);
+      } else {
+        alert("Oops! There was a problem submitting your form.");
+      }
+    })
+    .catch(() => {
+      alert("Oops! There was a problem submitting your form.");
+    });
+  });
+</script>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-500 text-sm py-6 relative">
+      <div class="container mx-auto px-6 text-center">
+        &copy; <span id="year"></span> Portofolio Ladaru Valentina | All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
